@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Now Showing - MovieTime</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <style>
+    body.movies-bg {
+      background: url("https://i.imgur.com/Vs3rSx2.jpg") no-repeat center center/cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .movies-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    header, footer, main {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body class="movies-bg">
+  <div class="movies-overlay"></div>
+
+  <header>
+    <h1>🎬 Now Showing</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html" class="active">Movies</a>
+      <a href="contact.html">Contact</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="movies-grid">
+    <div class="movie-card">
+      <img src="images/download.jpg" alt="Avatar 2" />
+      <h3>Avatar: The Way of Water</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/openheimer.jpg" alt="Oppenheimer" />
+      <h3>Oppenheimer</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/barbie.jpg" alt="Barbie" />
+      <h3>Barbie</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/spider.jpg" alt="Spider-Man" />
+      <h3>Spider-Man: No Way Home</h3>
+     <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/interse.jpg" alt="Interstellar" />
+      <h3>Interstellar</h3>
+     <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/bat.jpg" alt="The Batman" />
+      <h3>The Batman</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/incep.jpg" alt="Inception" />
+      <h3>Inception</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/john wic.jpg" alt="John Wick 4" />
+      <h3>John Wick 4</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/push.jpg" alt="Pushpa 2" />
+      <h3>Pushpa 2</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/jai.jpg" alt="Jailer" />
+      <h3>Jailer</h3>
+     <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+    <div class="movie-card">
+      <img src="images/bizon.jpg" alt="Bizon" />
+      <h3>Bison</h3>
+      <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+     <div class="movie-card">
+      <img src="images/kantara.jpg" alt="kantara" />
+      <h3>kantara</h3>
+     <a href="seatallocation.html"><button id="one" onclick="bookMovie('Avatar: The Way of Water')">Book</button></a>
+    </div>
+
+  </main>
+ 
+  <footer>
+    <p>© 2025 MovieTime</p>
+  </footer>
+
+  <style>
+    #one{
+      background-color: black;
+      color: wheat;
+      border-radius: 10px;
+      
+      padding: 10px;
+      
+    }
+    #one:hover{
+      background-color: rgb(168, 143, 189);
+      color: rgb(2, 6, 14);
+    }
+  </style>
+</body>
+</html>
